@@ -7,13 +7,21 @@
   
     .logo-container {
       height: 100%;
-      width: 70px;
+      width: 100px;
       padding: 10px;
+      display: flex;
 
       .logo{
           height: 50px;
           width: 100%;
       }
+      .cname{
+        height: 50px;
+        width: 100%;
+        font-size: 18px;
+        padding-left: 5px;
+      }
+
     }
   
     .options {

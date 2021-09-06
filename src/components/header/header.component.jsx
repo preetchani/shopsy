@@ -8,6 +8,7 @@ const Header = ()=>(
 <div className='header'>
     <Link className='logo-container' to='/'>
         <Logo className='logo'/>
+        <p className='cname'>Shopsy</p>
     </Link>
     <div className="options">
         <Link className='option' to='/'>
