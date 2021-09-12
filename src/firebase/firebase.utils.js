@@ -52,7 +52,7 @@ const provider = new firebase.auth.GoogleAuthProvider();
 //set custom parameter whenever we use googleaouth provider it will open google sign in popup
 provider.setCustomParameters({prompt:'select_account'});
 
-export const signInWithGoogle=() => auth.signInWithPopup(provider);
+export const signInWithGoogle=() => auth.signInWithPopup(provider).catch(error=>console.log(error));
 
 export default firebase;
 
