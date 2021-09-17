@@ -3,6 +3,7 @@ import CustomButton from "../custom-button/custom-button.component";
 import './cart-window.styles.scss';
 import {connect} from 'react-redux';
 import CartItem from "../cart-item/cart-item.component";
+import { selectCartItems } from "../../redux/cart/cart.selectors";
 
 const CartWindow = ({cartItems})=>(
     <div className="cart-window">
@@ -17,8 +18,8 @@ const CartWindow = ({cartItems})=>(
     </div>
 );
 
-const mapStateToProps = ({cart:{cartItems}})=>({
-cartItems
+const mapStateToProps = (state)=>({
+cartItems:selectCartItems(state)
 });
 
 export default connect(mapStateToProps)(CartWindow);
