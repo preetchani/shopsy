@@ -17,12 +17,6 @@ const Header = ({currentUser,hidden})=>(
         <p className='cname'>SHOPSY</p>
     </Link>
     <div className="options">
-        <Link className='option' to='/'>
-            SHOP
-        </Link>
-        <Link className='option' to='/'>
-            CONTACT
-        </Link>
         {
             currentUser?
             <div className='option' onClick={()=>auth.signOut()}>SIGN OUT</div>
@@ -30,6 +24,13 @@ const Header = ({currentUser,hidden})=>(
             SIGN IN
             </Link> 
         }
+        <Link className='option' to='/'>
+            SHOP
+        </Link>
+        <Link className='option' to='/'>
+            CONTACT
+        </Link>
+        
         <CartIcon/>
     </div>
     {hidden?null:<CartWindow/>}
