@@ -12,3 +12,14 @@ export const addItemToCart = (cartItems,cartItemToAdd)=>{
     //if item don't exists in cart array return array with appendded new item and quantity property
     return [...cartItems,{...cartItemToAdd,quantity:1}];
 };
+
+export const decreaseItemCount = (cartItems,selectedCartItem)=>{
+    const existingItems = cartItems.find(item=>item.id===selectedCartItem.id); 
+
+    if(existingItems.quantity===1){
+        return cartItems.filter(item=>item.id !== selectedCartItem.id)
+    }
+    return cartItems.map(
+        item=>item.id===selectedCartItem.id?{...item,quantity:item.quantity-1}:item
+    );
+}
