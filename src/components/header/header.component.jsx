@@ -24,7 +24,7 @@ const Header = ({currentUser,hidden})=>(
             SIGN IN
             </Link> 
         }
-        <Link className='option' to='/'>
+        <Link className='option' to='/shop'>
             SHOP
         </Link>
         <Link className='option' to='/'>
