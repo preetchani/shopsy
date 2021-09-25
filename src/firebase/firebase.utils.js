@@ -3,7 +3,7 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 var firebaseConfig = {
-    apiKey: "AIzaSyDqh1MV3se87OkoQbwM3ltP13jmM2OB48s",
+    apiKey: process.env.REACT_APP_API_KEY,
     authDomain: "shopsy-db.firebaseapp.com",
     projectId: "shopsy-db",
     storageBucket: "shopsy-db.appspot.com",
