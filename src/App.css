@@ -1,6 +1,12 @@
 body{
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Patrick Hand', sans-serif;
     padding: 20px 60px;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        padding: 10px;
+    }
 }
 
 a{

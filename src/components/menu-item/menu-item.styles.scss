@@ -11,6 +11,7 @@
     margin: 0 7.5px 15px;
     overflow: hidden;
 
+   
     &:hover {
       cursor: pointer;
     
@@ -27,6 +28,9 @@
 
     &.large{
         height: 380px;
+        @media screen and (max-width:800px) {
+          height: 200px;
+        }
     }
     &:first-child {
       margin-right: 7.5px;
@@ -55,11 +59,12 @@
       background-color: #ffff;
       opacity: 0.7;
       position: absolute;
-  
+      
+      
       .title {
         font-weight: bold;
         margin-bottom: 6px;
-        font-size: 22px;
+        font-size: 18px;
         color: #4a4a4a;
       }
   
@@ -68,4 +73,8 @@
         font-size: 16px;
       }
     }
+    @media screen and (max-width:800px) {
+      height: 200px;
+    }
   }
+  

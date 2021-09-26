@@ -4,13 +4,21 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-  
+
+    @media screen and (max-width:800px) {
+    height: 60px;
+    padding: 10px;  
+    margin-bottom: 20px;
+    }
     .logo-container {
       height: 100%;
       width: 100px;
       padding: 10px;
       display: flex;
-
+      @media screen and (max-width:800px) {
+        width: 50px;
+        padding: 0px;
+      }
       .logo{
           height: 50px;
           width: 100%;
@@ -18,8 +26,10 @@
       .cname{
         height: 50px;
         width: 100%;
-        font-size: 18px;
         padding-left: 5px;
+        @media screen and (max-width:800px) {
+          display: none;
+        }
       }
 
     }
@@ -31,10 +41,13 @@
       align-items: center;
       justify-content: flex-end;
       font-weight: bold;
-      font-size: 18px;
-  
+      @media screen and (max-width:800px) {
+        width: 80%;
+
+      }
+
       .option {
-        padding: 10px 15px;
+        padding: 5px 10px;
       }
     }
   }
